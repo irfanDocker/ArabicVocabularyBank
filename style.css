@@ -168,6 +168,15 @@ main {
   font-style: italic;
 }
 
+.uyghur-text {
+  font-family: 'Amiri', 'Arabic Typesetting', 'Traditional Arabic', serif;
+  font-size: 1.3rem;
+  color: var(--surface);
+  direction: rtl;
+  text-align: center;
+  opacity: .85;
+}
+
 .card-controls {
   display: flex;
   justify-content: center;
@@ -290,10 +299,15 @@ main {
   vertical-align: middle;
 }
 
-#browse-table td[lang="ar"] {
+#browse-table td[lang="ar"],
+#browse-table td[lang="ug"] {
   font-family: 'Amiri', 'Arabic Typesetting', 'Traditional Arabic', serif;
   font-size: 1.2rem;
   direction: rtl;
+  text-align: right;
+}
+
+#browse-table th[lang="ug"] {
   text-align: right;
 }
 

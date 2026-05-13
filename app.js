@@ -76,6 +76,9 @@
     $('card-english').textContent = entry.english;
     $('card-arabic').textContent = entry.arabic;
     $('card-translit').textContent = entry.transliteration || '';
+    const ugEl = $('card-uyghur');
+    ugEl.textContent = entry.uyghur || '';
+    ugEl.style.display = entry.uyghur ? '' : 'none';
     $('card-counter').textContent = `${cardIndex + 1} / ${deck.length}`;
     $('progress-text').textContent = `${cardIndex + 1} of ${deck.length}`;
   }
@@ -237,6 +240,7 @@
         <td>${e.english}</td>
         <td lang="ar" dir="rtl">${e.arabic}</td>
         <td><em>${e.transliteration || ''}</em></td>
+        <td lang="ug" dir="rtl">${e.uyghur || ''}</td>
       </tr>`).join('');
 
     $('progress-text').textContent = `${filtered.length} entries`;
