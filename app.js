@@ -86,6 +86,7 @@
     if (active === 'mode-flashcard') initFlashcard();
     else if (active === 'mode-match') initMatch();
     else if (active === 'mode-browse') renderBrowse();
+    // adhkar modes don't need refresh on lesson/book change
   }
 
   // ── Mode switching ──
@@ -93,9 +94,13 @@
     btn.addEventListener('click', () => {
       document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
+      // Show/hide lesson bar (not needed in adhkar mode)
+      const isAdhkar = btn.dataset.mode && btn.dataset.mode.startsWith('adhkar');
+      $('lesson-bar').style.display = isAdhkar ? 'none' : '';
       document.querySelectorAll('.mode').forEach(m => m.classList.remove('active'));
       $('mode-' + btn.dataset.mode).classList.add('active');
-      refreshCurrentMode();
+      if (btn.dataset.mode === 'adhkar-morning') initAdhkar();
+      else refreshCurrentMode();
     });
   });
 
@@ -247,8 +252,70 @@
 
   $('browse-search').addEventListener('input', e => renderBrowse(e.target.value));
 
+  // ──────────────────────────────────────────────
+  // MORNING ADHKAR MODE
+  // ──────────────────────────────────────────────
+  let adhkarIndex = 0;
+
+  function initAdhkar() {
+    adhkarIndex = 0;
+    buildAdhkarDots();
+    renderAdhkar();
+  }
+
+  function buildAdhkarDots() {
+    const dots = $('adhkar-dots');
+    dots.innerHTML = MORNING_ADHKAR.map((_, i) =>
+      `<span class="adhkar-dot${i === 0 ? ' active' : ''}" data-i="${i}"></span>`
+    ).join('');
+    dots.querySelectorAll('.adhkar-dot').forEach(dot => {
+      dot.addEventListener('click', () => {
+        adhkarIndex = +dot.dataset.i;
+        renderAdhkar();
+      });
+    });
+  }
+
+  function renderAdhkar() {
+    const d = MORNING_ADHKAR[adhkarIndex];
+    // Arabic text: replace literal \n with line breaks for display
+    $('adhkar-arabic').textContent = d.arabic.replace(/\\n/g, '\n');
+    // Uyghur translation
+    const ugEl = $('adhkar-uyghur');
+    ugEl.textContent = d.uyghur.replace(/\\n/g, '\n');
+    ugEl.style.display = d.uyghur.trim() ? '' : 'none';
+    // Source
+    const srcEl = $('adhkar-source');
+    srcEl.textContent = d.source ? `[ ${d.source} ]` : '';
+    srcEl.style.display = d.source ? '' : 'none';
+    // Repeat badge
+    $('adhkar-repeat-badge').textContent = `× ${d.repeat}`;
+    // Counter
+    $('adhkar-counter').textContent = `${adhkarIndex + 1} / ${MORNING_ADHKAR.length}`;
+    // Dots
+    document.querySelectorAll('.adhkar-dot').forEach((dot, i) => {
+      dot.classList.toggle('active', i === adhkarIndex);
+    });
+    // Scroll card into view smoothly
+    $('adhkar-card').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  $('adhkar-prev').addEventListener('click', () => {
+    if (adhkarIndex > 0) { adhkarIndex--; renderAdhkar(); }
+  });
+  $('adhkar-next').addEventListener('click', () => {
+    if (adhkarIndex < MORNING_ADHKAR.length - 1) { adhkarIndex++; renderAdhkar(); }
+  });
+
+  document.addEventListener('keydown', e => {
+    if (document.querySelector('.mode.active')?.id !== 'mode-adhkar-morning') return;
+    if (e.key === 'ArrowRight') $('adhkar-next').click();
+    if (e.key === 'ArrowLeft')  $('adhkar-prev').click();
+  });
+
   // ── Boot ──
   buildLessonSelector();
   initFlashcard();
   renderBrowse();
+  initAdhkar();
 })();

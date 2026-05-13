@@ -23,12 +23,13 @@
       <button class="nav-btn active" data-mode="flashcard">Flashcards</button>
       <button class="nav-btn" data-mode="match">Matching Game</button>
       <button class="nav-btn" data-mode="browse">Browse</button>
+      <button class="nav-btn" data-mode="adhkar-morning">🌅 Morning Adhkar</button>
     </nav>
   </header>
 
   <main>
-    <!-- Lesson selector (shared) -->
-    <div class="lesson-bar">
+    <!-- Lesson selector (shared, hidden in adhkar mode) -->
+    <div class="lesson-bar" id="lesson-bar">
       <label for="lesson-select">Lesson:</label>
       <select id="lesson-select"></select>
       <span id="progress-text"></span>
@@ -79,9 +80,32 @@
         <tbody id="browse-tbody"></tbody>
       </table>
     </section>
+
+    <!-- ── MORNING ADHKAR MODE ── -->
+    <section id="mode-adhkar-morning" class="mode">
+      <div class="adhkar-header">
+        <span id="adhkar-counter" class="adhkar-counter"></span>
+        <span id="adhkar-repeat-badge" class="repeat-badge"></span>
+      </div>
+
+      <div class="adhkar-card" id="adhkar-card">
+        <div class="adhkar-arabic" id="adhkar-arabic" lang="ar" dir="rtl"></div>
+        <div class="adhkar-divider"></div>
+        <div class="adhkar-uyghur" id="adhkar-uyghur" lang="ug" dir="rtl"></div>
+        <div class="adhkar-source" id="adhkar-source"></div>
+      </div>
+
+      <div class="adhkar-controls">
+        <button id="adhkar-prev">&#8592; Prev</button>
+        <button id="adhkar-next">Next &#8594;</button>
+      </div>
+
+      <div class="adhkar-dots" id="adhkar-dots"></div>
+    </section>
   </main>
 
   <script src="data.js"></script>
+  <script src="adhkar_morning.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
