@@ -97,9 +97,11 @@
       // Show/hide lesson bar (not needed in adhkar mode)
       const isAdhkar = btn.dataset.mode && btn.dataset.mode.startsWith('adhkar');
       $('lesson-bar').style.display = isAdhkar ? 'none' : '';
+
       document.querySelectorAll('.mode').forEach(m => m.classList.remove('active'));
       $('mode-' + btn.dataset.mode).classList.add('active');
       if (btn.dataset.mode === 'adhkar-morning') initAdhkar();
+      else if (btn.dataset.mode === 'adhkar-evening') initAdhkarEvening();
       else refreshCurrentMode();
     });
   });
@@ -313,9 +315,64 @@
     if (e.key === 'ArrowLeft')  $('adhkar-prev').click();
   });
 
+  // ──────────────────────────────────────────────
+  // EVENING ADHKAR MODE
+  // ──────────────────────────────────────────────
+  let adhkarEveIndex = 0;
+
+  function initAdhkarEvening() {
+    adhkarEveIndex = 0;
+    buildAdhkarEveDots();
+    renderAdhkarEvening();
+  }
+
+  function buildAdhkarEveDots() {
+    const dots = $('adhkar-eve-dots');
+    dots.innerHTML = EVENING_ADHKAR.map((_, i) =>
+      `<span class="adhkar-dot${i === 0 ? ' active' : ''}" data-i="${i}"></span>`
+    ).join('');
+    dots.querySelectorAll('.adhkar-dot').forEach(dot => {
+      dot.addEventListener('click', () => {
+        adhkarEveIndex = +dot.dataset.i;
+        renderAdhkarEvening();
+      });
+    });
+  }
+
+  function renderAdhkarEvening() {
+    const d = EVENING_ADHKAR[adhkarEveIndex];
+    $('adhkar-eve-arabic').textContent = d.arabic.replace(/\\n/g, '\n');
+    const ugEl = $('adhkar-eve-uyghur');
+    ugEl.textContent = d.uyghur.replace(/\\n/g, '\n');
+    ugEl.style.display = d.uyghur.trim() ? '' : 'none';
+    const srcEl = $('adhkar-eve-source');
+    srcEl.textContent = d.source ? `[ ${d.source} ]` : '';
+    srcEl.style.display = d.source ? '' : 'none';
+    $('adhkar-eve-repeat-badge').textContent = `× ${d.repeat}`;
+    $('adhkar-eve-counter').textContent = `${adhkarEveIndex + 1} / ${EVENING_ADHKAR.length}`;
+    document.querySelectorAll('#adhkar-eve-dots .adhkar-dot').forEach((dot, i) => {
+      dot.classList.toggle('active', i === adhkarEveIndex);
+    });
+    $('adhkar-eve-card').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  $('adhkar-eve-prev').addEventListener('click', () => {
+    if (adhkarEveIndex > 0) { adhkarEveIndex--; renderAdhkarEvening(); }
+  });
+  $('adhkar-eve-next').addEventListener('click', () => {
+    if (adhkarEveIndex < EVENING_ADHKAR.length - 1) { adhkarEveIndex++; renderAdhkarEvening(); }
+  });
+
+  document.addEventListener('keydown', e => {
+    if (document.querySelector('.mode.active')?.id !== 'mode-adhkar-evening') return;
+    if (e.key === 'ArrowRight') $('adhkar-eve-next').click();
+    if (e.key === 'ArrowLeft')  $('adhkar-eve-prev').click();
+  });
+
   // ── Boot ──
   buildLessonSelector();
   initFlashcard();
   renderBrowse();
   initAdhkar();
+  initAdhkarEvening();
 })();

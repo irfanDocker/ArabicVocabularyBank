@@ -24,6 +24,7 @@
       <button class="nav-btn" data-mode="match">Matching Game</button>
       <button class="nav-btn" data-mode="browse">Browse</button>
       <button class="nav-btn" data-mode="adhkar-morning">🌅 Morning Adhkar</button>
+      <button class="nav-btn" data-mode="adhkar-evening">🌙 Evening Adhkar</button>
     </nav>
   </header>
 
@@ -102,10 +103,33 @@
 
       <div class="adhkar-dots" id="adhkar-dots"></div>
     </section>
+
+    <!-- ── EVENING ADHKAR MODE ── -->
+    <section id="mode-adhkar-evening" class="mode">
+      <div class="adhkar-header">
+        <span id="adhkar-eve-counter" class="adhkar-counter"></span>
+        <span id="adhkar-eve-repeat-badge" class="repeat-badge"></span>
+      </div>
+
+      <div class="adhkar-card" id="adhkar-eve-card">
+        <div class="adhkar-arabic" id="adhkar-eve-arabic" lang="ar" dir="rtl"></div>
+        <div class="adhkar-divider"></div>
+        <div class="adhkar-uyghur" id="adhkar-eve-uyghur" lang="ug" dir="rtl"></div>
+        <div class="adhkar-source" id="adhkar-eve-source"></div>
+      </div>
+
+      <div class="adhkar-controls">
+        <button id="adhkar-eve-prev">&#8592; Prev</button>
+        <button id="adhkar-eve-next">Next &#8594;</button>
+      </div>
+
+      <div class="adhkar-dots" id="adhkar-eve-dots"></div>
+    </section>
   </main>
 
   <script src="data.js"></script>
   <script src="adhkar_morning.js"></script>
+  <script src="adhkar_evening.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
