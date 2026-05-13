@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arabic Vocabulary — Madinah Book 2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Arabic Vocabulary</h1>
+    <p class="subtitle">Madinah Book 2</p>
+    <nav>
+      <button class="nav-btn active" data-mode="flashcard">Flashcards</button>
+      <button class="nav-btn" data-mode="match">Matching Game</button>
+      <button class="nav-btn" data-mode="browse">Browse</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Lesson selector (shared) -->
+    <div class="lesson-bar">
+      <label for="lesson-select">Lesson:</label>
+      <select id="lesson-select"></select>
+      <span id="progress-text"></span>
+    </div>
+
+    <!-- ── FLASHCARD MODE ── -->
+    <section id="mode-flashcard" class="mode active">
+      <div id="card-container">
+        <div id="card" class="card" tabindex="0" role="button" aria-label="Flip card">
+          <div class="card-front">
+            <p id="card-english"></p>
+          </div>
+          <div class="card-back">
+            <p id="card-arabic" lang="ar" dir="rtl"></p>
+            <p id="card-translit" class="translit"></p>
+          </div>
+        </div>
+      </div>
+      <div class="card-controls">
+        <button id="btn-prev">&#8592; Prev</button>
+        <span id="card-counter"></span>
+        <button id="btn-next">Next &#8594;</button>
+      </div>
+      <div class="card-controls" style="margin-top:.5rem">
+        <button id="btn-shuffle">Shuffle</button>
+        <button id="btn-flip">Flip</button>
+      </div>
+    </section>
+
+    <!-- ── MATCHING GAME MODE ── -->
+    <section id="mode-match" class="mode">
+      <div class="match-header">
+        <button id="btn-new-match">New Round</button>
+        <span id="match-status"></span>
+      </div>
+      <div id="match-board"></div>
+      <div id="match-result" class="match-result hidden"></div>
+    </section>
+
+    <!-- ── BROWSE MODE ── -->
+    <section id="mode-browse" class="mode">
+      <input id="browse-search" type="search" placeholder="Search English or Arabic…">
+      <table id="browse-table">
+        <thead>
+          <tr><th>#</th><th>English</th><th lang="ar" dir="rtl">Arabic</th><th>Transliteration</th></tr>
+        </thead>
+        <tbody id="browse-tbody"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

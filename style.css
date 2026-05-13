@@ -1,0 +1,312 @@
+:root {
+  --bg: #1a1a2e;
+  --surface: #16213e;
+  --card-bg: #0f3460;
+  --accent: #e2b04a;
+  --accent2: #c0392b;
+  --text: #f0e6d3;
+  --text-dim: #a09080;
+  --correct: #27ae60;
+  --wrong: #e74c3c;
+  --radius: 12px;
+  --shadow: 0 4px 20px rgba(0,0,0,.5);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: var(--surface);
+  padding: 1.2rem 1rem .8rem;
+  text-align: center;
+  border-bottom: 2px solid var(--accent);
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: var(--accent);
+  letter-spacing: .04em;
+}
+
+.subtitle {
+  font-size: .85rem;
+  color: var(--text-dim);
+  margin: .2rem 0 .8rem;
+}
+
+nav {
+  display: flex;
+  gap: .5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav-btn {
+  background: transparent;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  padding: .4rem 1.1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: .9rem;
+  transition: background .2s, color .2s;
+}
+
+.nav-btn.active, .nav-btn:hover {
+  background: var(--accent);
+  color: var(--bg);
+  font-weight: 600;
+}
+
+main {
+  flex: 1;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Lesson bar */
+.lesson-bar {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  margin-bottom: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.lesson-bar label { color: var(--text-dim); font-size: .9rem; }
+
+#lesson-select {
+  background: var(--surface);
+  border: 1px solid var(--accent);
+  color: var(--text);
+  padding: .35rem .6rem;
+  border-radius: 6px;
+  font-size: .9rem;
+}
+
+#progress-text {
+  margin-left: auto;
+  color: var(--text-dim);
+  font-size: .85rem;
+}
+
+/* Mode sections */
+.mode { display: none; }
+.mode.active { display: block; }
+
+/* ── FLASHCARD ── */
+#card-container {
+  perspective: 1000px;
+  margin: 1rem auto;
+  max-width: 500px;
+}
+
+.card {
+  width: 100%;
+  height: 220px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform .5s ease;
+  cursor: pointer;
+  border-radius: var(--radius);
+}
+
+.card.flipped { transform: rotateY(180deg); }
+
+.card-front, .card-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.card-front {
+  background: var(--card-bg);
+  border: 2px solid var(--accent);
+}
+
+.card-front p {
+  font-size: 1.4rem;
+  text-align: center;
+  color: var(--text);
+}
+
+.card-back {
+  background: var(--accent);
+  transform: rotateY(180deg);
+  border: 2px solid var(--accent);
+  gap: .6rem;
+}
+
+#card-arabic {
+  font-size: 2.2rem;
+  font-family: 'Amiri', 'Arabic Typesetting', 'Traditional Arabic', serif;
+  color: var(--bg);
+  direction: rtl;
+  text-align: center;
+}
+
+.translit {
+  font-size: 1rem;
+  color: var(--surface);
+  font-style: italic;
+}
+
+.card-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: .8rem;
+}
+
+.card-controls button {
+  background: var(--surface);
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: .45rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: .9rem;
+  transition: background .15s;
+}
+
+.card-controls button:hover { background: var(--card-bg); }
+
+#card-counter { color: var(--text-dim); font-size: .9rem; min-width: 60px; text-align: center; }
+
+/* ── MATCHING GAME ── */
+.match-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.match-header button {
+  background: var(--accent2);
+  border: none;
+  color: #fff;
+  padding: .5rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: .9rem;
+}
+
+#match-status { color: var(--text-dim); font-size: .9rem; }
+
+#match-board {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .6rem;
+}
+
+.match-card {
+  background: var(--card-bg);
+  border: 2px solid transparent;
+  border-radius: var(--radius);
+  padding: .8rem .6rem;
+  cursor: pointer;
+  text-align: center;
+  transition: border-color .15s, background .15s;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  word-break: break-word;
+}
+
+.match-card[lang="ar"] {
+  font-family: 'Amiri', 'Arabic Typesetting', 'Traditional Arabic', serif;
+  font-size: 1.4rem;
+  direction: rtl;
+}
+
+.match-card:hover:not(.matched):not(.wrong) { border-color: var(--accent); }
+.match-card.selected { border-color: var(--accent); background: var(--surface); }
+.match-card.matched { border-color: var(--correct); background: rgba(39,174,96,.15); cursor: default; }
+.match-card.wrong { border-color: var(--wrong); background: rgba(231,76,60,.15); }
+
+.match-result {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.match-result.hidden { display: none; }
+
+/* ── BROWSE ── */
+#browse-search {
+  width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--accent);
+  color: var(--text);
+  padding: .55rem .8rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: .8rem;
+}
+
+#browse-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .9rem;
+}
+
+#browse-table th {
+  background: var(--surface);
+  color: var(--accent);
+  padding: .6rem .8rem;
+  border-bottom: 2px solid var(--accent);
+  text-align: left;
+}
+
+#browse-table th[lang="ar"] { text-align: right; }
+
+#browse-table td {
+  padding: .5rem .8rem;
+  border-bottom: 1px solid rgba(255,255,255,.07);
+  vertical-align: middle;
+}
+
+#browse-table td[lang="ar"] {
+  font-family: 'Amiri', 'Arabic Typesetting', 'Traditional Arabic', serif;
+  font-size: 1.2rem;
+  direction: rtl;
+  text-align: right;
+}
+
+#browse-table tr:hover td { background: rgba(255,255,255,.04); }
+
+#browse-table .num { color: var(--text-dim); font-size: .8rem; }
+
+/* Scrollable table on small screens */
+@media (max-width: 600px) {
+  #browse-table { font-size: .8rem; }
+  .card { height: 200px; }
+  #card-arabic { font-size: 1.8rem; }
+  #match-board { gap: .4rem; }
+  .match-card { min-height: 60px; font-size: .9rem; padding: .6rem .4rem; }
+  .match-card[lang="ar"] { font-size: 1.2rem; }
+}
