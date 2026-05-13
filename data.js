@@ -15,7 +15,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "House",
-          "arabic": "بيت",
+          "arabic": "بَيْتٌ",
           "uyghur": "ئۆي"
         },
         {
@@ -35,7 +35,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Door",
-          "arabic": "باب",
+          "arabic": "بَابٌ",
           "uyghur": "ئىشىك"
         },
         {
@@ -100,7 +100,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "And",
-          "arabic": "و",
+          "arabic": "وَ",
           "uyghur": "ۋە"
         },
         {
@@ -125,7 +125,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Yes",
-          "arabic": "نعم",
+          "arabic": "نَعَمْ",
           "uyghur": "ھەئە"
         },
         {
@@ -145,24 +145,24 @@ const VOCAB_DATA = {
         },
         {
           "english": "No",
-          "arabic": "لا",
+          "arabic": "لَا",
           "uyghur": "ياق"
         },
         {
           "english": "Star",
-          "arabic": "نجم",
+          "arabic": "نَجْمٌ",
           "uyghur": ""
         },
         {
           "english": "Who",
-          "arabic": "من",
+          "arabic": "مِنْ",
           "uyghur": "كىم"
         }
       ],
       "2": [
         {
           "english": "What",
-          "arabic": "ما؟",
+          "arabic": "مَا؟",
           "uyghur": "نېمە"
         },
         {
@@ -172,7 +172,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Stone",
-          "arabic": "حجر",
+          "arabic": "حَجَرٌ",
           "uyghur": "تاش"
         },
         {
@@ -279,7 +279,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Water",
-          "arabic": "ماء",
+          "arabic": "مَاءٌ",
           "uyghur": "سۇ"
         },
         {
@@ -314,12 +314,12 @@ const VOCAB_DATA = {
         },
         {
           "english": "Paper",
-          "arabic": "ورق",
+          "arabic": "وَرَقٌ",
           "uyghur": "قەغەز"
         },
         {
           "english": "Hot",
-          "arabic": "حار",
+          "arabic": "حَارٌّ",
           "uyghur": "قىزىق"
         },
         {
@@ -369,7 +369,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Bread",
-          "arabic": "خبز",
+          "arabic": "خُبْزٌ",
           "uyghur": "بولكا"
         },
         {
@@ -379,12 +379,12 @@ const VOCAB_DATA = {
         },
         {
           "english": "Eye",
-          "arabic": "عين",
+          "arabic": "عَيْنٌ",
           "uyghur": "كۆز"
         },
         {
           "english": "Face",
-          "arabic": "وجه",
+          "arabic": "وَجْهٌ",
           "uyghur": "يۈز"
         },
         {
@@ -419,7 +419,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Air",
-          "arabic": "هواء",
+          "arabic": "هَوَاءٌ",
           "uyghur": "ھاۋا"
         },
         {
@@ -429,7 +429,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Hand",
-          "arabic": "يد",
+          "arabic": "يَدٌ",
           "uyghur": "قول"
         },
         {
@@ -469,7 +469,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "A fish",
-          "arabic": "سمك",
+          "arabic": "سَمَكٌ",
           "uyghur": "بىر بېلىق"
         },
         {
@@ -479,7 +479,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "A sun",
-          "arabic": "شمس",
+          "arabic": "شَمْسٌ",
           "uyghur": "قۇياش"
         },
         {
@@ -489,17 +489,17 @@ const VOCAB_DATA = {
         },
         {
           "english": "Chest",
-          "arabic": "صدر",
+          "arabic": "صَدْرٌ",
           "uyghur": "كۆكرەك"
         },
         {
           "english": "Afternoon/time",
-          "arabic": "عصر",
+          "arabic": "عَصْرٌ",
           "uyghur": "چۈشتىن كېيىن / ۋاقىت"
         },
         {
           "english": "Guest",
-          "arabic": "ضيف",
+          "arabic": "ضَيْفٌ",
           "uyghur": "مېھمان"
         },
         {
@@ -536,7 +536,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Sky",
-          "arabic": "سماء",
+          "arabic": "سَمَاءٌ",
           "uyghur": ""
         },
         {
@@ -561,7 +561,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Muhammad",
-          "arabic": "محمد",
+          "arabic": "مُحَمَّدٌ",
           "uyghur": "مۇھەممەد"
         },
         {
@@ -571,12 +571,12 @@ const VOCAB_DATA = {
         },
         {
           "english": "He",
-          "arabic": "هو",
+          "arabic": "هُوَ",
           "uyghur": "ئۇ"
         },
         {
           "english": "Maryam",
-          "arabic": "مريم",
+          "arabic": "مَرْيَمُ",
           "uyghur": "مەريەم"
         },
         {
@@ -601,7 +601,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Bathroom",
-          "arabic": "حمام",
+          "arabic": "حَمَّامٌ",
           "uyghur": "مۇنچا"
         },
         {
@@ -616,7 +616,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Ammaar",
-          "arabic": "عمار",
+          "arabic": "عَمَّارٌ",
           "uyghur": ""
         },
         {
@@ -671,7 +671,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Zainab",
-          "arabic": "زينب",
+          "arabic": "زَيْنَبُ",
           "uyghur": ""
         },
         {
@@ -686,12 +686,12 @@ const VOCAB_DATA = {
         },
         {
           "english": "He left",
-          "arabic": "خرج",
+          "arabic": "خَرَجَ",
           "uyghur": "ئۇ كېتىپ قالدى"
         },
         {
           "english": "I",
-          "arabic": "أنا",
+          "arabic": "أَنَا",
           "uyghur": "مەن"
         },
         {
@@ -711,7 +711,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "China",
-          "arabic": "الصين",
+          "arabic": "الصِّينُ",
           "uyghur": "جۇڭگو"
         },
         {
@@ -733,17 +733,17 @@ const VOCAB_DATA = {
         },
         {
           "english": "O..          ..",
-          "arabic": "يا",
+          "arabic": "يَا",
           "uyghur": ""
         },
         {
           "english": "Masood",
-          "arabic": "مسعود",
+          "arabic": "مَسْعُودٌ",
           "uyghur": ""
         },
         {
           "english": "There",
-          "arabic": "هناك",
+          "arabic": "هُنَاكَ",
           "uyghur": "ئۇ يەردە"
         },
         {
@@ -753,7 +753,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Here",
-          "arabic": "هنا",
+          "arabic": "هُنَا",
           "uyghur": "بۇ يەردە"
         },
         {
@@ -773,7 +773,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Under/beneath",
-          "arabic": "تحت",
+          "arabic": "تَحْتَ",
           "uyghur": "ئاستىدا / ئاستىدا"
         },
         {
@@ -788,12 +788,12 @@ const VOCAB_DATA = {
         },
         {
           "english": "Allah",
-          "arabic": "االله",
+          "arabic": "اللهُ",
           "uyghur": "ئاللاھ"
         },
         {
           "english": "Paternal uncle",
-          "arabic": "عم",
+          "arabic": "عَمٌّ",
           "uyghur": "ئاتىسىنىڭ تاغىسى"
         },
         {
@@ -860,7 +860,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Tea",
-          "arabic": "شاي",
+          "arabic": "شَايٌ",
           "uyghur": "چاي"
         },
         {
@@ -955,7 +955,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Eye",
-          "arabic": "عين",
+          "arabic": "عَيْنٌ",
           "uyghur": "كۆز"
         },
         {
@@ -1049,7 +1049,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Abdullah",
-          "arabic": "عبداالله",
+          "arabic": "عَبْدُاللهِ",
           "uyghur": ""
         },
         {
@@ -1069,7 +1069,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Musa",
-          "arabic": "موسى",
+          "arabic": "مُوسَى",
           "uyghur": "مۇسا"
         },
         {
@@ -1116,7 +1116,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Hard/difficult",
-          "arabic": "صعب",
+          "arabic": "صَعْبٌ",
           "uyghur": "قاتتىق / قىيىن"
         },
         {
@@ -1211,7 +1211,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "hospital",
-          "arabic": "مستوصف",
+          "arabic": "مُسْتَوْصَفٌ",
           "uyghur": "دوختۇرخانا"
         },
         {
@@ -1256,7 +1256,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Sharp",
-          "arabic": "حاد",
+          "arabic": "حَادٌّ",
           "uyghur": "ئۆتكۈر"
         }
       ],
@@ -1313,7 +1313,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Mahmood",
-          "arabic": "محمود",
+          "arabic": "مَحْمُودٌ",
           "uyghur": "مەھمۇد"
         },
         {
@@ -1333,7 +1333,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Riyadh",
-          "arabic": "الرياض",
+          "arabic": "الرِّيَاضُ",
           "uyghur": "رىياد"
         },
         {
@@ -1375,7 +1375,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Su’aad",
-          "arabic": "سعاد",
+          "arabic": "سُعَادُ",
           "uyghur": ""
         },
         {
@@ -1400,7 +1400,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Under",
-          "arabic": "تحت",
+          "arabic": "تَحْتَ",
           "uyghur": "ئاستىدا"
         },
         {
@@ -1430,12 +1430,12 @@ const VOCAB_DATA = {
         },
         {
           "english": "She left",
-          "arabic": "خرجت",
+          "arabic": "خَرَجَتْ",
           "uyghur": "ئۇ كېتىپ قالدى"
         },
         {
           "english": "Sa’d",
-          "arabic": "سعد",
+          "arabic": "سَعْدٌ",
           "uyghur": ""
         }
       ],
@@ -1462,7 +1462,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Director",
-          "arabic": "موجه",
+          "arabic": "مُوَجِّهٌ",
           "uyghur": "مۇدىر"
         },
         {
@@ -1497,27 +1497,27 @@ const VOCAB_DATA = {
         },
         {
           "english": "Fathers",
-          "arabic": "آباء",
+          "arabic": "آبَاءٌ",
           "uyghur": "ئاتىلار"
         },
         {
           "english": "Sa’ad",
-          "arabic": "سعاد",
+          "arabic": "سُعَادُ",
           "uyghur": ""
         },
         {
           "english": "Scholar",
-          "arabic": "شيخ",
+          "arabic": "شَيْخٌ",
           "uyghur": "ئالىم"
         },
         {
           "english": "She left",
-          "arabic": "خرجت",
+          "arabic": "خَرَجَتْ",
           "uyghur": "ئۇ كېتىپ قالدى"
         },
         {
           "english": "Scholars",
-          "arabic": "شيوخ",
+          "arabic": "شُيُوخٌ",
           "uyghur": "ئۆلىمالار"
         },
         {
@@ -1532,7 +1532,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Syria",
-          "arabic": "سوريا",
+          "arabic": "سُورِيَا",
           "uyghur": "سۈرىيە"
         },
         {
@@ -1557,7 +1557,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Sir",
-          "arabic": "سيد",
+          "arabic": "سَيِّدٌ",
           "uyghur": "ئەپەندىم"
         },
         {
@@ -1607,12 +1607,12 @@ const VOCAB_DATA = {
         },
         {
           "english": "Ministers",
-          "arabic": "وزراء",
+          "arabic": "وُزَرَاءٌ",
           "uyghur": "مىنىستىرلار"
         },
         {
           "english": "After",
-          "arabic": "بعد",
+          "arabic": "بَعْدَ",
           "uyghur": ""
         },
         {
@@ -1634,7 +1634,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "These (pl. m/f)",
-          "arabic": "هؤلاء",
+          "arabic": "هَؤُلَاءِ",
           "uyghur": "بۇلار (pl. M / f)"
         },
         {
@@ -1854,7 +1854,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Paternal uncle",
-          "arabic": "عم",
+          "arabic": "عَمٌّ",
           "uyghur": "ئاتىسىنىڭ تاغىسى"
         },
         {
@@ -1874,12 +1874,12 @@ const VOCAB_DATA = {
         },
         {
           "english": "Guest",
-          "arabic": "ضيف",
+          "arabic": "ضَيْفٌ",
           "uyghur": "مېھمان"
         },
         {
           "english": "Star",
-          "arabic": "نجم",
+          "arabic": "نَجْمٌ",
           "uyghur": ""
         },
         {
@@ -1979,7 +1979,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "They (pl.m)",
-          "arabic": "هم",
+          "arabic": "هُمْ",
           "uyghur": "ئۇلار (pl.m)"
         },
         {
@@ -2084,7 +2084,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "They (pl.f)",
-          "arabic": "هن",
+          "arabic": "هُنَّ",
           "uyghur": "ئۇلار (pl.f)"
         },
         {
@@ -2186,7 +2186,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "We",
-          "arabic": "نحن",
+          "arabic": "نَحْنُ",
           "uyghur": "بىز"
         },
         {
@@ -3511,7 +3511,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Paper",
-          "arabic": "ورق",
+          "arabic": "وَرَقٌ",
           "uyghur": "قەغەز"
         },
         {
@@ -4075,7 +4075,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "He came",
-          "arabic": "جاء",
+          "arabic": "جَاءَ",
           "uyghur": "ئۇ كەلدى"
         },
         {
@@ -4210,7 +4210,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "From",
-          "arabic": "عن",
+          "arabic": "عَنْ",
           "uyghur": ""
         },
         {
@@ -4347,7 +4347,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Did not...",
-          "arabic": "ما",
+          "arabic": "مَا",
           "uyghur": "قىلمىدى ..."
         },
         {
@@ -5407,7 +5407,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "He left (a-u)",
-          "arabic": "خرج",
+          "arabic": "خَرَجَ",
           "uyghur": "ئۇ كېتىپ قالدى (a-u)"
         },
         {
@@ -5477,7 +5477,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "He listened (i-a)",
-          "arabic": "سمع",
+          "arabic": "سَمِعَ",
           "uyghur": "ئۇ ئاڭلىدى (i-a)"
         },
         {
@@ -6380,7 +6380,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "He prevented",
-          "arabic": "نعم",
+          "arabic": "نَعَمْ",
           "uyghur": "ئۇ ئالدىنى ئالدى"
         },
         {
@@ -6530,7 +6530,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Hand",
-          "arabic": "يد",
+          "arabic": "يَدٌ",
           "uyghur": "قول"
         },
         {
@@ -6575,7 +6575,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Sharp",
-          "arabic": "حاد",
+          "arabic": "حَادٌّ",
           "uyghur": "ئۆتكۈر"
         },
         {
@@ -6585,7 +6585,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Razor",
-          "arabic": "موسى",
+          "arabic": "مُوسَى",
           "uyghur": ""
         }
       ],
@@ -7051,7 +7051,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Air",
-          "arabic": "هواء",
+          "arabic": "هَوَاءٌ",
           "uyghur": "ھاۋا"
         },
         {
@@ -7288,7 +7288,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Gentleman",
-          "arabic": "سيد",
+          "arabic": "سَيِّدٌ",
           "uyghur": "مۇلايىم"
         },
         {
@@ -8087,7 +8087,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Director",
-          "arabic": "موجه",
+          "arabic": "مُوَجِّهٌ",
           "uyghur": "مۇدىر"
         },
         {
@@ -8132,7 +8132,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Head teacher",
-          "arabic": "موجه",
+          "arabic": "مُوَجِّهٌ",
           "uyghur": "باش ئوقۇتقۇچى"
         },
         {
@@ -8701,7 +8701,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "He came",
-          "arabic": "جاء",
+          "arabic": "جَاءَ",
           "uyghur": "ئۇ كەلدى"
         },
         {
@@ -9520,7 +9520,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Masood",
-          "arabic": "مسعود",
+          "arabic": "مَسْعُودٌ",
           "uyghur": ""
         },
         {

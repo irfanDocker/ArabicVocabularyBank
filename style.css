@@ -164,36 +164,46 @@ main {
 .card-front {
   background: var(--card-bg);
   border: 2px solid var(--accent);
-}
-
-.card-front p {
-  font-size: 1.4rem;
-  text-align: center;
-  color: var(--text);
+  gap: .5rem;
 }
 
 .card-back {
   background: var(--accent);
   transform: rotateY(180deg);
   border: 2px solid var(--accent);
-  gap: .6rem;
+  gap: .5rem;
 }
 
 #card-arabic {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-family: 'Amiri', 'Arabic Typesetting', 'Traditional Arabic', serif;
-  color: var(--bg);
+  color: var(--text);
   direction: rtl;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.card-hint {
+  font-size: .75rem;
+  color: var(--text-dim);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.card-english-back {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--bg);
   text-align: center;
 }
 
 .uyghur-text {
   font-family: 'Amiri', 'Arabic Typesetting', 'Traditional Arabic', serif;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: var(--surface);
   direction: rtl;
   text-align: center;
-  opacity: .85;
+  opacity: .9;
 }
 
 .card-controls {

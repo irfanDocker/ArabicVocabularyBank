@@ -105,8 +105,8 @@
   function renderCard() {
     if (!deck.length) return;
     const entry = deck[cardIndex];
-    $('card-english').textContent = entry.english;
     $('card-arabic').innerHTML = tajweedHTML(entry.arabic);
+    $('card-english').textContent = entry.english;
     const ugEl = $('card-uyghur');
     ugEl.textContent = entry.uyghur || '';
     ugEl.style.display = entry.uyghur ? '' : 'none';
