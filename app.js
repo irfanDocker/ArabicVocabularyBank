@@ -63,8 +63,16 @@
   function buildLessonSelector() {
     const sel = $('lesson-select');
     const bd = bookData();
-    sel.innerHTML = '<option value="all">All Lessons</option>' +
-      lessonKeys().map(l => `<option value="${l}">Lesson ${l} (${bd[l].length})</option>`).join('');
+    const isQuran = currentBook === '3';
+    const unitLabel = isQuran ? 'Section' : 'Lesson';
+    const allLabel = isQuran ? 'All Sections' : 'All Lessons';
+    sel.innerHTML = `<option value="all">${allLabel}</option>` +
+      lessonKeys().map(l => {
+        const startNum = (parseInt(l) - 1) * 50 + 1;
+        const endNum = startNum + bd[l].length - 1;
+        const label = isQuran ? `${unitLabel} ${l} (#${startNum}–${endNum})` : `${unitLabel} ${l} (${bd[l].length})`;
+        return `<option value="${l}">${label}</option>`;
+      }).join('');
     sel.value = currentLesson === 'all' ? 'all' : currentLesson;
   }
 
