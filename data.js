@@ -5,7 +5,7 @@ const VOCAB_DATA = {
       "1": [
         {
           "english": "Who is this..?",
-          "arabic": "مَنْهَذَا",
+          "arabic": "مَنْ هَذَا",
           "uyghur": "بۇ كىم؟ .."
         },
         {
@@ -850,7 +850,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Allah",
-          "arabic": "الحَمْدُاللهِ",
+          "arabic": "الحَمْدُ اللهِ",
           "uyghur": "ئاللاھ"
         },
         {
@@ -944,7 +944,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Abdullah",
-          "arabic": "عَبْدُاالله",
+          "arabic": "عَبْدُ الله",
           "uyghur": ""
         },
         {
@@ -1021,7 +1021,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "language",
-          "arabic": "اللُّغَةُالإِنْجِلِيْزِيّةُ",
+          "arabic": "اللُّغَةُ الإِنْجِلِيْزِيّةُ",
           "uyghur": "تىل"
         },
         {
@@ -1103,7 +1103,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "language?",
-          "arabic": "مَالُغَتُكَ",
+          "arabic": "مَا لُغَتُكَ",
           "uyghur": "تىل"
         },
         {
@@ -1247,7 +1247,7 @@ const VOCAB_DATA = {
       "12": [
         {
           "english": "(sing. m)",
-          "arabic": "كَيْفَحَالُكَ",
+          "arabic": "كَيْفَ حَالُكَ",
           "uyghur": ""
         },
         {
@@ -1337,7 +1337,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "and his blessings",
-          "arabic": "رَحْمَةُااللهوَبَرَكَاتُهُ",
+          "arabic": "رَحْمَةُ اللهِ وَبَرَكَاتُهُ",
           "uyghur": "ئۇنىڭ بەرىكىتى"
         }
       ],
@@ -1886,7 +1886,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Lord",
-          "arabic": "االلهرَبْنَا",
+          "arabic": "الله رَبُّنَا",
           "uyghur": "رەببىم"
         },
         {
@@ -2021,12 +2021,12 @@ const VOCAB_DATA = {
         },
         {
           "english": "medicine",
-          "arabic": "كُلِيّةُالطِّبِّ",
+          "arabic": "كُلِيّةُ الطِّبِّ",
           "uyghur": ""
         },
         {
           "english": "engineering",
-          "arabic": "كُلِيةُّالهَنْدَسَةِ",
+          "arabic": "كُلِيّةُ الهَنْدَسَةِ",
           "uyghur": "قۇرۇلۇش"
         },
         {
@@ -2041,7 +2041,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Islamic law",
-          "arabic": "كُلِيّةُالشّرِيْعَةِ",
+          "arabic": "كُلِيّةُ الشّرِيْعَةِ",
           "uyghur": "ئىسلام قانۇنى"
         },
         {
@@ -2101,7 +2101,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "him",
-          "arabic": "شَفَاهُاالله",
+          "arabic": "شَفَاهُ الله",
           "uyghur": ""
         }
       ],
@@ -2332,14 +2332,14 @@ const VOCAB_DATA = {
         },
         {
           "english": "company",
-          "arabic": "مُـدِيْرُالشّرِكَةِ",
+          "arabic": "مُدِيْرُ الشّرِكَةِ",
           "uyghur": "شىركەت"
         }
       ],
       "18": [
         {
           "english": "Eid ul fitr",
-          "arabic": "عِيْدُالْفِطْرِ",
+          "arabic": "عِيْدُ الْفِطْرِ",
           "uyghur": "قۇربان ھېيت"
         },
         {
@@ -2568,22 +2568,22 @@ const VOCAB_DATA = {
         },
         {
           "english": "Three sons",
-          "arabic": "ثَلاثَةُأَبْنَاءٍ",
+          "arabic": "ثَلاثَةُ أَبْنَاءٍ",
           "uyghur": "ئۈچ ئوغلى"
         },
         {
           "english": "Four sisters",
-          "arabic": "أَرْبَعُأَخَوَاتٍ",
+          "arabic": "أَرْبَعُ أَخَوَاتٍ",
           "uyghur": "تۆت ئاچا-سىڭىل"
         },
         {
           "english": "Four brothers",
-          "arabic": "أَرْبَعَةُإِخْوَةٍ",
+          "arabic": "أَرْبَعَةُ إِخْوَةٍ",
           "uyghur": "تۆت ئاكا"
         },
         {
           "english": "Five mothers",
-          "arabic": "خَمْسُأُمّهَاتٍ",
+          "arabic": "خَمْسُ أُمّهَاتٍ",
           "uyghur": "بەش ئانا"
         },
         {
@@ -2598,12 +2598,12 @@ const VOCAB_DATA = {
         },
         {
           "english": "Six men",
-          "arabic": "سِتّةُرِجَالٍ",
+          "arabic": "سِتّةُ رِجَالٍ",
           "uyghur": "ئالتە كىشى"
         },
         {
           "english": "Seven students",
-          "arabic": "سَبْعُطَالِبَاتٍ",
+          "arabic": "سَبْعُ طَالِبَاتٍ",
           "uyghur": "يەتتە ئوقۇغۇچى"
         },
         {
@@ -3136,12 +3136,12 @@ const VOCAB_DATA = {
         },
         {
           "english": "Indeed we",
-          "arabic": "إِنّنَاإِنّا",
+          "arabic": "إِنَّنَا",
           "uyghur": "ھەقىقەتەن بىز"
         },
         {
           "english": "example",
-          "arabic": "الْمَثَالُالأَوّلُ",
+          "arabic": "الْمَثَالُ الأَوّلُ",
           "uyghur": "مەسىلەن"
         },
         {
@@ -3151,7 +3151,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "example",
-          "arabic": "الْمَثَالُالثَّانِي",
+          "arabic": "الْمَثَالُ الثَّانِي",
           "uyghur": "مەسىلەن"
         },
         {
@@ -3176,7 +3176,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Verbal sentence",
-          "arabic": "الْجُمْلَةُالْفَعْلَيّةُ",
+          "arabic": "الْجُمْلَةُ الْفَعْلِيّةُ",
           "uyghur": "ئاغزاكى جۈملە"
         }
       ],
@@ -3228,12 +3228,12 @@ const VOCAB_DATA = {
         },
         {
           "english": "United States",
-          "arabic": "الوِلايَاتُالْمُتّحَدَةُ",
+          "arabic": "الوِلايَاتُ الْمُتّحَدَةُ",
           "uyghur": ""
         },
         {
           "english": "I am happy to",
-          "arabic": "أنامَسْرُورٌ",
+          "arabic": "أنا مَسْرُورٌ",
           "uyghur": "مەن خۇشال"
         },
         {
@@ -3380,7 +3380,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Eleven  students",
-          "arabic": "أَحَدَعَشَرَطَالَباً",
+          "arabic": "أَحَدَ عَشَرَ طَالَباً",
           "uyghur": "11 ئوقۇغۇچى"
         },
         {
@@ -3390,7 +3390,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Twelve  students",
-          "arabic": "اَثْنَاعَشَرَطَالَباً",
+          "arabic": "اَثْنَا عَشَرَ طَالَباً",
           "uyghur": "ئون ئىككى ئوقۇغۇچى"
         },
         {
@@ -3400,17 +3400,17 @@ const VOCAB_DATA = {
         },
         {
           "english": "students",
-          "arabic": "ثَلاثَةَعَشَرَطَالَباً",
+          "arabic": "ثَلاثَةَ عَشَرَ طَالَباً",
           "uyghur": "ئوقۇغۇچىلار"
         },
         {
           "english": "students",
-          "arabic": "أَرْبَعَةَعَشَرَطَالَباً",
+          "arabic": "أَرْبَعَةَ عَشَرَ طَالَباً",
           "uyghur": "ئوقۇغۇچىلار"
         },
         {
           "english": "Fifteen  students",
-          "arabic": "خَمْسَةَعَشَرَطَالَباً",
+          "arabic": "خَمْسَةَ عَشَرَ طَالَباً",
           "uyghur": "15 ئوقۇغۇچى"
         },
         {
@@ -3420,7 +3420,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Sixteen  students",
-          "arabic": "سَتّةَعَشَرَطَالَباً",
+          "arabic": "سَتّةَ عَشَرَ طَالَباً",
           "uyghur": "16 ئوقۇغۇچى"
         },
         {
@@ -3430,22 +3430,22 @@ const VOCAB_DATA = {
         },
         {
           "english": "students",
-          "arabic": "سَبْعَةَعَشَرَطَالَباً",
+          "arabic": "سَبْعَةَ عَشَرَ طَالَباً",
           "uyghur": "ئوقۇغۇچىلار"
         },
         {
           "english": "students",
-          "arabic": "ثمَانِيَةَعَشَرَطَالَباً",
+          "arabic": "ثمَانِيَةَ عَشَرَ طَالَباً",
           "uyghur": "ئوقۇغۇچىلار"
         },
         {
           "english": "students",
-          "arabic": "تَسْعَةَعَشَرَطَالَباً",
+          "arabic": "تَسْعَةَ عَشَرَ طَالَباً",
           "uyghur": "ئوقۇغۇچىلار"
         },
         {
           "english": "Twenty students",
-          "arabic": "عَشْرُوْنَطَالَباً",
+          "arabic": "عَشْرُوْنَ طَالَباً",
           "uyghur": "20 ئوقۇغۇچى"
         },
         {
@@ -3510,7 +3510,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Superlative)",
-          "arabic": "فَعْلُالتّفْضَيْل",
+          "arabic": "فَعْلُ التَّفْضِيْل",
           "uyghur": "دەرىجىدىن تاشقىرى)"
         },
         {
@@ -3759,7 +3759,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "the two sukoons",
-          "arabic": "إِلْتَقَاءُالسّاكَنَيْنِ",
+          "arabic": "إِلْتِقَاءُ السَّاكِنَيْنِ",
           "uyghur": ""
         },
         {
@@ -3926,12 +3926,12 @@ const VOCAB_DATA = {
         },
         {
           "english": "your knowledge",
-          "arabic": "زَادَكَااللهعَلْمٍا",
+          "arabic": "زَادَكَ اللهُ عِلْماً",
           "uyghur": "بىلىمىڭىز"
         },
         {
           "english": "students",
-          "arabic": "أَرْبَعَعَشْرَةَطَالَبَةً",
+          "arabic": "أَرْبَعَ عَشْرَةَ طَالَبَةً",
           "uyghur": "ئوقۇغۇچىلار"
         },
         {
@@ -3946,7 +3946,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "students",
-          "arabic": "سَبْعَعَشْرَةَطَالَبَةً",
+          "arabic": "سَبْعَ عَشْرَةَ طَالَبَةً",
           "uyghur": "ئوقۇغۇچىلار"
         },
         {
@@ -4058,7 +4058,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Sign of femininity",
-          "arabic": "عَلاَمَةُالتّأنِيْثَ",
+          "arabic": "عَلاَمَةُ التّأنِيْثِ",
           "uyghur": "ئاياللىقنىڭ ئالامىتى"
         },
         {
@@ -4068,7 +4068,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Sign of plural",
-          "arabic": "عَلاَمَةُالْجَمْعِ",
+          "arabic": "عَلاَمَةُ الْجَمْعِ",
           "uyghur": "كۆپلۈكنىڭ بەلگىسى"
         },
         {
@@ -4143,7 +4143,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Basketball",
-          "arabic": "كُرَةُالسّلَّةَ",
+          "arabic": "كُرَةُ السّلَّةِ",
           "uyghur": "ۋاسكېتبول"
         },
         {
@@ -4153,7 +4153,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Football",
-          "arabic": "كُرَةُالْقَدَمِ",
+          "arabic": "كُرَةُ الْقَدَمِ",
           "uyghur": "پۇتبول"
         },
         {
@@ -4295,12 +4295,12 @@ const VOCAB_DATA = {
         },
         {
           "english": "questions",
-          "arabic": "عَدّةُأَسْئَلَةِ",
+          "arabic": "عَدّةُ أَسْئِلَةٍ",
           "uyghur": "سوئاللار"
         },
         {
           "english": "The six authentic",
-          "arabic": "الْكُتُبُالسِّتّةُ",
+          "arabic": "الْكُتُبُ السِّتّةُ",
           "uyghur": "ئالتە ھەقىقىي"
         },
         {
@@ -4340,7 +4340,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "brother",
-          "arabic": "يَاابْنَأَخَيْ",
+          "arabic": "يَا ابْنَ أَخِيْ",
           "uyghur": "ئاكا"
         },
         {
@@ -4607,7 +4607,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Quarter to nine",
-          "arabic": "التّاسَعَةُإِلاَّرُبْعاً",
+          "arabic": "التّاسِعَةُ إِلاَّ رُبْعاً",
           "uyghur": "تۆتتىن توققۇزغىچە"
         },
         {
@@ -4749,7 +4749,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "literature",
-          "arabic": "كُلِّيّةُالآدَابِ",
+          "arabic": "كُلِّيّةُ الآدَابِ",
           "uyghur": "ئەدەبىيات"
         },
         {
@@ -4759,7 +4759,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "commerce",
-          "arabic": "كُلِّيّةُالتِّجَارَةَ",
+          "arabic": "كُلِّيّةُ التِّجَارَةِ",
           "uyghur": "سودا"
         },
         {
@@ -4769,7 +4769,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "protection",
-          "arabic": "فَيْأَمَانَااللهِ",
+          "arabic": "فِيْ أَمَانِ اللهِ",
           "uyghur": "قوغداش"
         },
         {
@@ -4814,7 +4814,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "futurity",
-          "arabic": "حَرْفُالإِسْتَقْبَالِ",
+          "arabic": "حَرْفُ الاِسْتِقْبَالِ",
           "uyghur": "كەلگۈسى"
         }
       ],
@@ -4826,7 +4826,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Sunday",
-          "arabic": "يَوْمُالأَحَدَ",
+          "arabic": "يَوْمُ الأَحَدَ",
           "uyghur": "يەكشەنبە"
         },
         {
@@ -4836,32 +4836,32 @@ const VOCAB_DATA = {
         },
         {
           "english": "Tuesday",
-          "arabic": "يَوْمُالثُّلاثَاءِ",
+          "arabic": "يَوْمُ الثُّلاثَاءِ",
           "uyghur": "سەيشەنبە"
         },
         {
           "english": "Wednesday",
-          "arabic": "يَوْمُالأَرْبِعَاءِ",
+          "arabic": "يَوْمُ الأَرْبِعَاءِ",
           "uyghur": "چارشەنبە"
         },
         {
           "english": "Thursday",
-          "arabic": "يَوْمُالْخَمَيْسِ",
+          "arabic": "يَوْمُ الْخَمِيْسِ",
           "uyghur": "پەيشەنبە"
         },
         {
           "english": "Friday",
-          "arabic": "يَوْمُالْجُمُعَةَ",
+          "arabic": "يَوْمُ الْجُمُعَةِ",
           "uyghur": "جۈمە"
         },
         {
           "english": "Saturday",
-          "arabic": "يَوْمُالسّبْتَ",
+          "arabic": "يَوْمُ السّبْتِ",
           "uyghur": "شەنبە"
         },
         {
           "english": "Foreign minister",
-          "arabic": "وَزِيْرُالْخَارِجِيّةَ",
+          "arabic": "وَزِيْرُ الْخَارِجِيّةِ",
           "uyghur": "تاشقى ئىشلار مىنىستىرى"
         },
         {
@@ -4911,7 +4911,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Next week",
-          "arabic": "الأَسْبُوْعُالْقَادَمُ",
+          "arabic": "الأُسْبُوْعُ الْقَادِمُ",
           "uyghur": "كېلەر ھەپتە"
         },
         {
@@ -4923,7 +4923,7 @@ const VOCAB_DATA = {
       "13": [
         {
           "english": "Taxi",
-          "arabic": "سَيّارَةُالأُجْرَةَ",
+          "arabic": "سَيّارَةُ الأُجْرَةِ",
           "uyghur": "تاكسى"
         },
         {
@@ -4943,7 +4943,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "present tense",
-          "arabic": "حَرْفُالْمُضَارِع",
+          "arabic": "حَرْفُ الْمُضَارِعِ",
           "uyghur": "ھازىرقى زامان"
         }
       ],
@@ -5222,7 +5222,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "wonderment",
-          "arabic": "فَعْلُالتّعَجْبِ",
+          "arabic": "فَعْلُ التَّعَجُّبِ",
           "uyghur": "ھەيران قېلىش"
         },
         {
@@ -5369,7 +5369,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Turkish language",
-          "arabic": "اللُّغَةُالتْرْكَيّةُ",
+          "arabic": "اللُّغَةُ التُّرْكِيّةُ",
           "uyghur": "تۈرك تىلى"
         },
         {
@@ -5429,7 +5429,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "of negation",
-          "arabic": "مَاالنّافَيَةما",
+          "arabic": "مَا النَّافِيَة",
           "uyghur": "رەت قىلىش"
         },
         {
@@ -5494,19 +5494,19 @@ const VOCAB_DATA = {
         },
         {
           "english": "Ma of questioning",
-          "arabic": "مَاالإِسْتَفْهَامَيّة",
+          "arabic": "مَا الاِسْتِفْهَامِيّة",
           "uyghur": "سوئال سوراش"
         }
       ],
       "17": [
         {
           "english": "high and exalted",
-          "arabic": "االلهتَعَالى",
+          "arabic": "اللهُ تَعَالى",
           "uyghur": "ئېگىز ۋە ئۇلۇغ"
         },
         {
           "english": "The noble prophet",
-          "arabic": "النّبَوَيْالشّرِيْفُ",
+          "arabic": "النَّبَوِيُّ الشَّرِيْفُ",
           "uyghur": "ئالىيجاناب پەيغەمبەر"
         },
         {
@@ -5536,7 +5536,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Next year",
-          "arabic": "الْعَامُالْمُقْبِلُ",
+          "arabic": "الْعَامُ الْمُقْبِلُ",
           "uyghur": "كېلەر يىلى"
         },
         {
@@ -5611,7 +5611,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "German language",
-          "arabic": "اللُّغَةُالْمَانِيَةُ",
+          "arabic": "اللُّغَةُ الأَلْمَانِيَةُ",
           "uyghur": "گېرمان تىلى"
         },
         {
@@ -5621,7 +5621,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "English language",
-          "arabic": "اللُّغَةُالإِنْكَلَيْزِيّةُ",
+          "arabic": "اللُّغَةُ الإِنْجِلِيْزِيّةُ",
           "uyghur": "ئىنگلىز تىلى"
         },
         {
@@ -5631,7 +5631,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "German language",
-          "arabic": "اللُّغَةُالْمَانِيّةُ",
+          "arabic": "اللُّغَةُ الأَلْمَانِيّةُ",
           "uyghur": "گېرمان تىلى"
         },
         {
@@ -5713,7 +5713,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Zoo",
-          "arabic": "حَدَيْقَةُالْحَيَوَانَاتَ",
+          "arabic": "حَدِيْقَةُ الْحَيَوَانَاتِ",
           "uyghur": "ھايۋاناتلار باغچىسى"
         },
         {
@@ -5763,7 +5763,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Presence of nun",
-          "arabic": "ثَبُوْتُالنْوْنَ",
+          "arabic": "ثُبُوْتُ النُّوْنِ",
           "uyghur": "راھىبە"
         }
       ],
@@ -6069,7 +6069,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Reception",
-          "arabic": "اَسْتَقْبَالٌ",
+          "arabic": "اِسْتِقْبَالٌ",
           "uyghur": "قوبۇل قىلىش"
         },
         {
@@ -6129,7 +6129,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Zoo",
-          "arabic": "حَدَيْقَةُالْحَيَوَانَاتَ",
+          "arabic": "حَدِيْقَةُ الْحَيَوَانَاتِ",
           "uyghur": "ھايۋاناتلار باغچىسى"
         },
         {
@@ -6146,7 +6146,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "endings of present",
-          "arabic": "حَالاتُالْمُضَارِعِ",
+          "arabic": "حَالاتُ الْمُضَارِعِ",
           "uyghur": "of end of present"
         },
         {
@@ -6161,7 +6161,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "nominative",
-          "arabic": "الْمُضَارِعُالمَرْفُوْعُ",
+          "arabic": "الْمُضَارِعُ الْمَرْفُوْعُ",
           "uyghur": ""
         },
         {
@@ -6191,7 +6191,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "First of it",
-          "arabic": "أَوّلُهُأَوّلُهَا",
+          "arabic": "أَوَّلُهُ أَوَّلُهَا",
           "uyghur": "بىرىنچى"
         },
         {
@@ -6223,12 +6223,12 @@ const VOCAB_DATA = {
       "23": [
         {
           "english": "students",
-          "arabic": "ثَمَانِوَعَشْرُوْنَطَالَبَةً",
+          "arabic": "ثَمَانٍ وَعَشْرُوْنَ طَالَبَةً",
           "uyghur": "ئوقۇغۇچىلار"
         },
         {
           "english": "students",
-          "arabic": "تَسْعٌوَعَشْرُوْنَطَالَبَةً",
+          "arabic": "تَسْعٌ وَعَشْرُوْنَ طَالَبَةً",
           "uyghur": "ئوقۇغۇچىلار"
         },
         {
@@ -6263,17 +6263,17 @@ const VOCAB_DATA = {
         },
         {
           "english": "students",
-          "arabic": "اَثْنَتَانَوَعَشْرُوْنَطَالَبَةً",
+          "arabic": "اَثْنَتَانَ وَعَشْرُوْنَ طَالَبَةً",
           "uyghur": "ئوقۇغۇچىلار"
         },
         {
           "english": "students",
-          "arabic": "ثَلاثٌوَعَشْرُوْنَطَالَبَةً",
+          "arabic": "ثَلاثٌ وَعَشْرُوْنَ طَالَبَةً",
           "uyghur": "ئوقۇغۇچىلار"
         },
         {
           "english": "students",
-          "arabic": "أَرْبَعٌوَعَشْرُوْنَطَالَبَةً",
+          "arabic": "أَرْبَعٌ وَعَشْرُوْنَ طَالَبَةً",
           "uyghur": "ئوقۇغۇچىلار"
         },
         {
@@ -6283,7 +6283,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "students",
-          "arabic": "سَتٰوَعَشْرُوْنَطَالَبَةً",
+          "arabic": "سِتٌّ وَعَشْرُوْنَ طَالَبَةً",
           "uyghur": "ئوقۇغۇچىلار"
         },
         {
@@ -6293,12 +6293,12 @@ const VOCAB_DATA = {
         },
         {
           "english": "students",
-          "arabic": "سَبْعٌوَعَشْرُوْنَطَالَبَةً",
+          "arabic": "سَبْعٌ وَعَشْرُوْنَ طَالَبَةً",
           "uyghur": "ئوقۇغۇچىلار"
         },
         {
           "english": "Nadawi",
-          "arabic": "الْحَسَنُالنّدَوِيْ",
+          "arabic": "الْحَسَنُ النَّدَوِيْ",
           "uyghur": ""
         },
         {
@@ -6328,7 +6328,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Arabs",
-          "arabic": "لَسَانُالْعَرَبِ",
+          "arabic": "لِسَانُ الْعَرَبِ",
           "uyghur": "ئەرەبلەر"
         },
         {
@@ -6340,17 +6340,17 @@ const VOCAB_DATA = {
       "24": [
         {
           "english": "students (m)",
-          "arabic": "مَائَةُطَالَبٍوَطَالَبٌ",
+          "arabic": "مَائَةُ طَالَبٍ وَطَالَبٌ",
           "uyghur": "ئوقۇغۇچىلار (m)"
         },
         {
           "english": "students (f)",
-          "arabic": "مَائَةٌوَسَتْطَالَبَاتِ",
+          "arabic": "مَائَةٌ وَسِتُّ طَالَبَاتٍ",
           "uyghur": "ئوقۇغۇچىلار (f)"
         },
         {
           "english": "students (m)",
-          "arabic": "مَائَةُطَالَبٍوَطَالَبَانَ",
+          "arabic": "مَائَةُ طَالَبٍ وَطَالَبَانِ",
           "uyghur": "ئوقۇغۇچىلار (m)"
         },
         {
@@ -6360,7 +6360,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "students (m)",
-          "arabic": "مَائَةٌوَأَرْبَعَةُطُلاَّبٍ",
+          "arabic": "مَائَةٌ وَأَرْبَعَةُ طُلاَّبٍ",
           "uyghur": "ئوقۇغۇچىلار (m)"
         },
         {
@@ -6370,7 +6370,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Hundred and eleven",
-          "arabic": "مَائَةٌوَإِحْدَىعَشَرَةَ",
+          "arabic": "مَائَةٌ وَإِحْدَى عَشَرَةَ",
           "uyghur": "يۈز ۋە ئون بىر"
         },
         {
@@ -6380,62 +6380,62 @@ const VOCAB_DATA = {
         },
         {
           "english": "students",
-          "arabic": "مَائَتَاطَالَبٍ",
+          "arabic": "مَائَتَا طَالَبٍ",
           "uyghur": "ئوقۇغۇچىلار"
         },
         {
           "english": "students",
-          "arabic": "مَائَتَاطَالَبَةِ",
+          "arabic": "مَائَتَا طَالَبَةٍ",
           "uyghur": "ئوقۇغۇچىلار"
         },
         {
           "english": "students",
-          "arabic": "ثَلاَثُمَائَةَطَالَبٍطَالَبَةِ",
+          "arabic": "ثَلاَثُ مِائَةِ طَالَبٍ وَطَالَبَةٍ",
           "uyghur": "ئوقۇغۇچىلار"
         },
         {
           "english": "students",
-          "arabic": "أَرْبَعُمَائَةَطَالَبٍطَالَبَةِ",
+          "arabic": "أَرْبَعُ مِائَةِ طَالَبٍ وَطَالَبَةٍ",
           "uyghur": "ئوقۇغۇچىلار"
         },
         {
           "english": "students (f)",
-          "arabic": "مَائَةُطَالَبَةِوَطَالَبَةٌ",
+          "arabic": "مَائَةُ طَالَبَةٍ وَطَالَبَةٌ",
           "uyghur": "ئوقۇغۇچىلار (f)"
         },
         {
           "english": "students",
-          "arabic": "خَمْسُمَائَةَطَالَبٍطَالَبَةِ",
+          "arabic": "خَمْسُ مِائَةِ طَالَبٍ وَطَالَبَةٍ",
           "uyghur": "ئوقۇغۇچىلار"
         },
         {
           "english": "students (f)",
-          "arabic": "مَائَةُطَالَبَةِوَطَالَبَتَانَ",
+          "arabic": "مَائَةُ طَالَبَةٍ وَطَالَبَتَانِ",
           "uyghur": "ئوقۇغۇچىلار (f)"
         },
         {
           "english": "students  (f)",
-          "arabic": "مَائَةٌوَثَلاثُطَالَبَاتِ",
+          "arabic": "مَائَةٌ وَثَلاثُ طَالَبَاتٍ",
           "uyghur": "ئوقۇغۇچىلار (f)"
         },
         {
           "english": "students  (f)",
-          "arabic": "مَائَةٌوَأَرْبَعُطَالَبَاتِ",
+          "arabic": "مَائَةٌ وَأَرْبَعُ طَالَبَاتٍ",
           "uyghur": "ئوقۇغۇچىلار (f)"
         },
         {
           "english": "students  (f)",
-          "arabic": "مَائَةٌوَخَمْسُطَالَبَاتِ",
+          "arabic": "مَائَةٌ وَخَمْسُ طَالَبَاتٍ",
           "uyghur": "ئوقۇغۇچىلار (f)"
         },
         {
           "english": "thousand",
-          "arabic": "مَئَةُأَلَفَطَالَبٍطَالَبَةِ",
+          "arabic": "مِائَةُ أَلْفِ طَالَبٍ وَطَالَبَةٍ",
           "uyghur": "مىڭ"
         },
         {
           "english": "thousand",
-          "arabic": "مَائَتَاأَلْفَطَالَبٍطَالَبَةِ",
+          "arabic": "مَائَتَا أَلْفِ طَالَبٍ وَطَالَبَةٍ",
           "uyghur": "مىڭ"
         },
         {
@@ -6445,7 +6445,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "thousand",
-          "arabic": "طَالَبٍطَالَبَةِ",
+          "arabic": "طَالِبٍ وَطَالِبَةٍ",
           "uyghur": "مىڭ"
         },
         {
@@ -6455,7 +6455,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "thousand",
-          "arabic": "طَالَبٍطَالَبَةِ",
+          "arabic": "طَالِبٍ وَطَالِبَةٍ",
           "uyghur": "مىڭ"
         },
         {
@@ -6527,7 +6527,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Arabs (dictionary)",
-          "arabic": "لَسَانُالْعَرَبِ",
+          "arabic": "لِسَانُ الْعَرَبِ",
           "uyghur": "ئەرەبلەر (لۇغەت)"
         },
         {
@@ -6774,7 +6774,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Return air ticket",
-          "arabic": "تَذْكَرَةُالطَّائَرةَذَهَاباً",
+          "arabic": "تَذْكَرَةُ الطَّائِرَةِ ذَهَاباً",
           "uyghur": "ئايروپىلان بېلىتىنى قايتۇرۇڭ"
         },
         {
@@ -6784,22 +6784,22 @@ const VOCAB_DATA = {
         },
         {
           "english": "radical",
-          "arabic": "الْفَعْلُالْمَثَالُ",
+          "arabic": "الْفَعْلُ الْمَثَالُ",
           "uyghur": "رادىكال"
         },
         {
           "english": "radical",
-          "arabic": "الْفَعْلُالأَجْوَفُ",
+          "arabic": "الْفَعْلُ الأَجْوَفُ",
           "uyghur": "رادىكال"
         },
         {
           "english": "radical",
-          "arabic": "الْفَعْلُالنّاقَصُ",
+          "arabic": "الْفَعْلُ النّاقِصُ",
           "uyghur": "رادىكال"
         },
         {
           "english": "radical",
-          "arabic": "الْفَعْلُالْمُضَعّفُ",
+          "arabic": "الْفَعْلُ الْمُضَعَّفُ",
           "uyghur": "رادىكال"
         },
         {
@@ -6809,12 +6809,12 @@ const VOCAB_DATA = {
         },
         {
           "english": "Weak of",
-          "arabic": "الْمُعْتَلُّالْفَاءِف",
+          "arabic": "الْمُعْتَلُّ الْفَاءِ",
           "uyghur": "ئاجىز"
         },
         {
           "english": "Weak of",
-          "arabic": "الْمُعْتَلُّالْعَيْنِع",
+          "arabic": "الْمُعْتَلُّ الْعَيْنِ",
           "uyghur": "ئاجىز"
         },
         {
@@ -7021,7 +7021,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Middle of the night",
-          "arabic": "مُنْتَصَفُاللَّيْلِ",
+          "arabic": "مُنْتَصَفُ اللَّيْلِ",
           "uyghur": "يېرىم كېچىدە"
         },
         {
@@ -7066,7 +7066,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Dhul-Qadah",
-          "arabic": "ذُوْالْقَعْدَةَ",
+          "arabic": "ذُو الْقَعْدَةِ",
           "uyghur": ""
         },
         {
@@ -7355,7 +7355,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "A type of silk",
-          "arabic": "نُوْعٌمَنَالْحَرِيْرِ",
+          "arabic": "نُوْعٌ مِنَ الْحَرِيْرِ",
           "uyghur": "يىپەكنىڭ بىر تۈرى"
         },
         {
@@ -7457,7 +7457,7 @@ const VOCAB_DATA = {
       "30": [
         {
           "english": "you success",
-          "arabic": "وَفَّقَكَاالله",
+          "arabic": "وَفَّقَكَ الله",
           "uyghur": "سىز مۇۋەپپەقىيەت قازىنىسىز"
         },
         {
@@ -7482,7 +7482,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "with the fixed",
-          "arabic": "تُرْفَعُبِثَبُوتَالنْوْنَ",
+          "arabic": "تُرْفَعُ بِثُبُوتِ النُّوْنِ",
           "uyghur": ""
         },
         {
@@ -7524,7 +7524,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "dictionary",
-          "arabic": "المُعْجَمُالوَسَيْطُ",
+          "arabic": "الْمُعْجَمُ الْوَسِيْطُ",
           "uyghur": "لۇغەت"
         },
         {
@@ -7534,7 +7534,7 @@ const VOCAB_DATA = {
         },
         {
           "english": "Feminine form",
-          "arabic": "التّأْنِيْثُ",
+          "arabic": "التَّأْنِيْثُ",
           "uyghur": "ئاياللار شەكلى"
         },
         {
