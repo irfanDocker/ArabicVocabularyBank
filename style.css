@@ -39,7 +39,32 @@ header h1 {
 .subtitle {
   font-size: .85rem;
   color: var(--text-dim);
-  margin: .2rem 0 .8rem;
+  margin: .2rem 0 .6rem;
+}
+
+.book-bar {
+  display: flex;
+  gap: .4rem;
+  justify-content: center;
+  margin-bottom: .6rem;
+}
+
+.book-btn {
+  background: transparent;
+  border: 2px solid var(--text-dim);
+  color: var(--text-dim);
+  padding: .35rem 1.2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: .95rem;
+  font-weight: 600;
+  transition: background .2s, color .2s, border-color .2s;
+}
+
+.book-btn.active, .book-btn:hover {
+  background: var(--accent2);
+  border-color: var(--accent2);
+  color: #fff;
 }
 
 nav {
