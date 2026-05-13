@@ -162,12 +162,6 @@ main {
   text-align: center;
 }
 
-.translit {
-  font-size: 1rem;
-  color: var(--surface);
-  font-style: italic;
-}
-
 .uyghur-text {
   font-family: 'Amiri', 'Arabic Typesetting', 'Traditional Arabic', serif;
   font-size: 1.3rem;

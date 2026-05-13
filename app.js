@@ -1,4 +1,31 @@
 (() => {
+  // ── Tajweed color map ──
+  // Each diacritic type gets its own color following the standard educational scheme
+  const TAJWEED = {
+    'َ': '#e74c3c', // fatha      — red
+    'ُ': '#27ae60', // damma      — green
+    'ِ': '#3498db', // kasra      — blue
+    'ً': '#e67e22', // tanwin fath — orange
+    'ٌ': '#1abc9c', // tanwin damm — teal
+    'ٍ': '#9b59b6', // tanwin kasr — purple
+    'ّ': '#f39c12', // shadda     — gold
+    'ْ': '#95a5a6', // sukun      — grey
+    'ٰ': '#e74c3c', // superscript alef — red (like fatha)
+    'ٓ': '#3498db', // maddah     — blue
+  };
+
+  function tajweedHTML(arabic) {
+    let html = '';
+    for (const ch of arabic) {
+      if (TAJWEED[ch]) {
+        html += `<span style="color:${TAJWEED[ch]}">${ch}</span>`;
+      } else {
+        html += ch;
+      }
+    }
+    return html;
+  }
+
   // ── State ──
   let currentLesson = 'all';
   let deck = [];
@@ -17,9 +44,7 @@
   const lessons = Object.keys(VOCAB_DATA).sort((a, b) => +a - +b);
 
   function getEntries(lesson) {
-    if (lesson === 'all') {
-      return lessons.flatMap(l => VOCAB_DATA[l]);
-    }
+    if (lesson === 'all') return lessons.flatMap(l => VOCAB_DATA[l]);
     return VOCAB_DATA[lesson] || [];
   }
 
@@ -74,8 +99,7 @@
     if (!deck.length) return;
     const entry = deck[cardIndex];
     $('card-english').textContent = entry.english;
-    $('card-arabic').textContent = entry.arabic;
-    $('card-translit').textContent = entry.transliteration || '';
+    $('card-arabic').innerHTML = tajweedHTML(entry.arabic);
     const ugEl = $('card-uyghur');
     ugEl.textContent = entry.uyghur || '';
     ugEl.style.display = entry.uyghur ? '' : 'none';
@@ -118,7 +142,7 @@
   // ──────────────────────────────────────────────
   // MATCHING GAME
   // ──────────────────────────────────────────────
-  const MATCH_COUNT = 6; // pairs per round
+  const MATCH_COUNT = 6;
 
   function initMatch() {
     selectedCard = null;
@@ -138,11 +162,9 @@
     const board = $('match-board');
     board.innerHTML = '';
 
-    // Build two columns: English (left) and Arabic (right), shuffled independently
     const engItems = shuffle(matchPairs.map((p, i) => ({ id: i, text: p.english, lang: 'en' })));
-    const arItems  = shuffle(matchPairs.map((p, i) => ({ id: i, text: p.arabic,   lang: 'ar' })));
+    const arItems  = shuffle(matchPairs.map((p, i) => ({ id: i, html: tajweedHTML(p.arabic), lang: 'ar' })));
 
-    // Interleave: eng[0], ar[0], eng[1], ar[1] … so grid-template-columns:1fr 1fr looks right
     const combined = [];
     for (let i = 0; i < engItems.length; i++) {
       combined.push(engItems[i], arItems[i]);
@@ -153,10 +175,12 @@
       div.className = 'match-card';
       div.dataset.id = item.id;
       div.dataset.lang = item.lang;
-      div.textContent = item.text;
       if (item.lang === 'ar') {
+        div.innerHTML = item.html;
         div.lang = 'ar';
         div.dir = 'rtl';
+      } else {
+        div.textContent = item.text;
       }
       div.addEventListener('click', () => onMatchCardClick(div));
       board.appendChild(div);
@@ -167,25 +191,15 @@
     if (div.classList.contains('matched') || div.classList.contains('wrong')) return;
 
     if (!selectedCard) {
-      // First selection
-      if (div.classList.contains('selected')) {
-        div.classList.remove('selected');
-        return;
-      }
+      if (div.classList.contains('selected')) { div.classList.remove('selected'); return; }
       div.classList.add('selected');
       selectedCard = div;
       return;
     }
 
-    if (div === selectedCard) {
-      div.classList.remove('selected');
-      selectedCard = null;
-      return;
-    }
+    if (div === selectedCard) { div.classList.remove('selected'); selectedCard = null; return; }
 
-    // Second selection — must be opposite lang
     if (div.dataset.lang === selectedCard.dataset.lang) {
-      // Switch selection to the new card
       selectedCard.classList.remove('selected');
       div.classList.add('selected');
       selectedCard = div;
@@ -197,14 +211,12 @@
     first.classList.remove('selected');
 
     if (first.dataset.id === div.dataset.id) {
-      // Correct match
       first.classList.add('matched');
       div.classList.add('matched');
       matchedCount++;
       $('match-status').textContent = `${matchedCount} / ${totalPairs} matched`;
       if (matchedCount === totalPairs) showMatchWin();
     } else {
-      // Wrong
       first.classList.add('wrong');
       div.classList.add('wrong');
       clearTimeout(wrongTimeout);
@@ -238,8 +250,7 @@
       <tr>
         <td class="num">${i + 1}</td>
         <td>${e.english}</td>
-        <td lang="ar" dir="rtl">${e.arabic}</td>
-        <td><em>${e.transliteration || ''}</em></td>
+        <td lang="ar" dir="rtl">${tajweedHTML(e.arabic)}</td>
         <td lang="ug" dir="rtl">${e.uyghur || ''}</td>
       </tr>`).join('');
 
